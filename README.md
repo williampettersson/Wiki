@@ -6,3 +6,4 @@
 - Issues I encounter
 - FAQ about git
 
+### **Please read intro.md**
