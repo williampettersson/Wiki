@@ -32,73 +32,75 @@
 
 ### **Virtual Machine**
 
-- username: vboxuser
-- password:
+#### Oracle VM VirtualBox
 
-<br/>
+- username: vboxuser
+  <br/>
 
 ### **10 Git commands**
 
 ```
-git version
+$ git version
 ```
 
 Check the version of your Git.
 
 ```
-git init
+$ git init
 ```
 
 Initialize new git monitorer.
 
 ```
-git commit
+$ git commit
 ```
 
 Commit saves the current state of your project.
 
 ```
-git status
+$ git status
 ```
 
 You can see what files tracked and which would be
 commited.
 
 ```
-git add
+$ git add
 ```
 
 Add new files to track in the repository.
 
 ```
-git config
+$ git config
 ```
 
 With this command you can tell git who the author is so that the commit can be saved in your name.
 
 ```
-git log
+$ git log
 ```
 
 Git log is used to display all the repository's commits from the current branch.
 
 ```
-git checkout
+$ git checkout
 ```
 
 Used to switch to another branch or to create and switch to a new one.
 
 ```
-git branch
+$ git branch
 ```
 
 Add a new branch to an already existing branch. You can list all branches and delete branches with this command.
 
 ```
-git merge
+$ git merge
 ```
 
 You can use this to merge already existing commits from a branch into the current branch.
+
+<br/>
 
 ```mermaid
 flowchart LR
@@ -115,6 +117,38 @@ E -->|git pull| C
 C -->|git config| C
 D -->|git branch| D
 ```
+
+### **Remote Git usage**
+
+```
+$ git clone "https://github.com/<repo-url>"
+```
+
+This command takes a path (URL) to a GitHub repository. git clone creates a local copy of a remote repository's source code. You can use this command when you for example want to continue working on your project on another device.
+
+```
+$ git remote
+```
+
+This command lets you create, delete, view and manage connections to other repositories. You can use this command to establish a connection to GitHub which lets you "push" and "pull" to and from the repository.
+
+```
+$ git pull
+```
+
+This command fetches the content from the remote repository and integrates it to your cloned local repository. Use this command to stay up to date with the latest commits.
+
+```
+$ git push
+```
+
+This command pushes the changes from your local repository to the remote repository you have set up with GitHub. Use this command when you want to upload or share your work.
+
+```
+$ git merge
+```
+
+This command can be used remote and locally. It merges already existing commits from one branch into the current one. You can use this when you want to combine branches.
 
 ### **Working with Git as a team**
 
