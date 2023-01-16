@@ -35,22 +35,80 @@
 - username: vboxuser
 - password:
 
+<br/>
+
 ### **10 Git commands**
 
-- "git version" check the version of your Git.
-- "git init" initialize new git monitorer.
-- "git commit" commit saves the current state of your project.
-- "git status" you can see what files tracked and which would be commited.
-- "git add" add new files to track in the repository.
-- "git config" here you can tell git who the author is so that the commit can be saved in your name.
-- "git log" git log is used to display all the repository's commits from the current branch.
-- "git checkout" used to switch to another branch or to create and switch to a new one.
-- "git branch" add a new branch to an already existing branch. You can list all branches and delete branches with this command.
-- "git merge" you can use this to merge already existing commits from a branch into the current branch.
+```
+git version
+```
 
-![](flowchart.svg)
+Check the version of your Git.
 
-### Working with Git as a team
+```
+git init
+```
+
+Initialize new git monitorer.
+
+```
+git commit
+```
+
+Commit saves the current state of your project.
+
+```
+git status
+```
+
+You can see what files tracked and which would be
+commited.
+
+```
+git add
+```
+
+Add new files to track in the repository.
+
+```
+git config
+```
+
+With this command you can tell git who the author is so that the commit can be saved in your name.
+
+```
+git log
+```
+
+Git log is used to display all the repository's commits from the current branch.
+
+```
+git checkout
+```
+
+Used to switch to another branch or to create and switch to a new one.
+
+```
+git branch
+```
+
+Add a new branch to an already existing branch. You can list all branches and delete branches with this command.
+
+```
+git merge
+```
+
+You can use this to merge already existing commits from a branch into the current branch.
+
+```mermaid
+graph TD
+A[Working directory] --> |git add| B(Staging area)
+B --> |git commit| C(Local repository)
+C -->|git push| E(Remote repository)
+E -->|git pull| C
+```
+
+### **Working with Git as a team**
 
 - **What is a merge conflict?**
 - When working with git as a team you do not want to be working in the same file. When you commit and push your version of a file and then a team member does the same without pulling your version a conflict will occur.
