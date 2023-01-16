@@ -101,11 +101,19 @@ git merge
 You can use this to merge already existing commits from a branch into the current branch.
 
 ```mermaid
-graph TD
-A[Working directory] --> |git add| B(Staging area)
-B --> |git commit| C(Local repository)
+flowchart LR
+A[Working directory] --> |git add| B[Staging area]
+B -->|git commit| C[Local repository]
+A -->|git init| C
+C -->|git merge| D(Branches)
+D -->|git checkout| C
+C -->|git version| C
+D -->|git log| C
+B -->|git status| A
 C -->|git push| E(Remote repository)
 E -->|git pull| C
+C -->|git config| C
+D -->|git branch| D
 ```
 
 ### **Working with Git as a team**
