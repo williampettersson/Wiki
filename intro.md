@@ -45,17 +45,23 @@ $ git version
 
 Check the version of your Git.
 
+[Official documentation](https://git-scm.com/docs/git-version)
+
 ```
 $ git init
 ```
 
 Initialize new git monitorer.
 
+[Official documentation](https://git-scm.com/docs/git-init)
+
 ```
 $ git commit
 ```
 
 Commit saves the current state of your project.
+
+[Official documentation](https://git-scm.com/docs/git-commit)
 
 ```
 $ git status
@@ -64,11 +70,15 @@ $ git status
 You can see what files tracked and which would be
 commited.
 
+[Official documentation](https://git-scm.com/docs/git-status)
+
 ```
 $ git add
 ```
 
 Add new files to track in the repository.
+
+[Official documentation](https://git-scm.com/docs/git-add)
 
 ```
 $ git config
@@ -76,11 +86,15 @@ $ git config
 
 With this command you can tell git who the author is so that the commit can be saved in your name.
 
+[Official documentation](https://git-scm.com/docs/git-config)
+
 ```
 $ git log
 ```
 
 Git log is used to display all the repository's commits from the current branch.
+
+[Official documentation](https://git-scm.com/docs/git-log)
 
 ```
 $ git checkout
@@ -88,17 +102,23 @@ $ git checkout
 
 Used to switch to another branch or to create and switch to a new one.
 
+[Official documentation](https://git-scm.com/docs/git-checkout)
+
 ```
 $ git branch
 ```
 
 Add a new branch to an already existing branch. You can list all branches and delete branches with this command.
 
+[Official documentation](https://git-scm.com/docs/git-branch)
+
 ```
 $ git merge
 ```
 
 You can use this to merge already existing commits from a branch into the current branch.
+
+[Official documentation](https://git-scm.com/docs/git-merge)
 
 <br/>
 
@@ -126,11 +146,15 @@ $ git clone "https://github.com/<repo-url>"
 
 This command takes a path (URL) to a GitHub repository. git clone creates a local copy of a remote repository's source code. You can use this command when you for example want to continue working on your project on another device.
 
+[Official documentation](https://git-scm.com/docs/git-clone)
+
 ```
-$ git remote
+$ git remote add <branch> <https://github.com/<user>/<repo-url>
 ```
 
 This command lets you create, delete, view and manage connections to other repositories. You can use this command to establish a connection to GitHub which lets you "push" and "pull" to and from the repository.
+
+[Official documentation](https://git-scm.com/docs/git-remote)
 
 ```
 $ git pull
@@ -138,11 +162,16 @@ $ git pull
 
 This command fetches the content from the remote repository and integrates it to your cloned local repository. Use this command to stay up to date with the latest commits.
 
+[Official documentation](https://git-scm.com/docs/git-pull)
+
 ```
 $ git push
 ```
 
-This command pushes the changes from your local repository to the remote repository you have set up with GitHub. Use this command when you want to upload or share your work.
+This command pushes the changes from your local repository to the remote repository you have set up with GitHub. Use this command when you want to upload or share your
+work.
+
+[Official documentation](https://git-scm.com/docs/git-push)
 
 ```
 $ git merge
@@ -150,7 +179,13 @@ $ git merge
 
 This command can be used remote and locally. It merges already existing commits from one branch into the current one. You can use this when you want to combine branches.
 
-### **Working with Git as a team**
+[Official documentation](https://git-scm.com/docs/git-merge)
+
+<br/>
+
+### **FAQ**
+
+#### **Working with Git as a team**
 
 - **What is a merge conflict?**
 - When working with git as a team you do not want to be working in the same file. When you commit and push your version of a file and then a team member does the same without pulling your version a conflict will occur.
