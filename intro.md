@@ -37,16 +37,16 @@
 
 ### **10 Git commands**
 
+- "git version" check the version of your Git.
 - "git init" initialize new git monitorer.
 - "git commit" commit saves the current state of your project.
-- "git remote add "branch" "url"" connect your project to a github repository that saves it in the cloud.
-- "git push" push uploads your latest commits to the github repository.
-- "git pull" downloads latest version of our project
 - "git status" you can see what files tracked and which would be commited.
-- "git add" add new files to track
-- "git clone" clones an already existing repository from github.
-- "git config" here you tell git who is the author.
-- "git remote -v" you can see what repository you are connected to.
+- "git add" add new files to track in the repository.
+- "git config" here you can tell git who the author is so that the commit can be saved in your name.
+- "git log" git log is used to display all the repository's commits from the current branch.
+- "git checkout" used to switch to another branch or to create and switch to a new one.
+- "git branch" add a new branch to an already existing branch. You can list all branches and delete branches with this command.
+- "git merge" you can use this to merge already existing commits from a branch into the current branch.
 
 ![](flowchart.svg)
 
@@ -60,6 +60,10 @@
 ### **GitHub**
 
 GitHub is a code hosting platform made for version control and collaborating on code projects. It lets you work together with others on different projects from anywhere in the world. You need GitHub to be able to store your work in the cloud and access it from anywhere. It is a great tool and asset for developers.
+
+### **SSH key**
+
+Added a secure trusted way to communicate between my local machine and GitHub account using an SSH key.
 
 [vscode]: https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
 [vscode-url]: https://code.visualstudio.com/
