@@ -76,7 +76,7 @@ commited.
 $ git add
 ```
 
-Add new files to track in the repository.
+Add new files to track in the repository. To stage all untracked files type: `git add .` or `git add -A`
 
 [Official documentation](https://git-scm.com/docs/git-add)
 
@@ -84,7 +84,7 @@ Add new files to track in the repository.
 $ git config
 ```
 
-With this command you can tell git who the author is so that the commit can be saved in your name.
+With this command you can tell git who the author is so that the commit can be saved in your name. `git config --global user.name "Your Name"` to add a username and `git config --global user.email "your@email.com"` to add your email.
 
 [Official documentation](https://git-scm.com/docs/git-config)
 
@@ -97,10 +97,10 @@ Git log is used to display all the repository's commits from the current branch.
 [Official documentation](https://git-scm.com/docs/git-log)
 
 ```
-$ git checkout
+$ git checkout <branch>
 ```
 
-Used to switch to another branch or to create and switch to a new one.
+Used to switch to another branch or to create and switch to a new one. To create a branch type `git checkout -b <name>`
 
 [Official documentation](https://git-scm.com/docs/git-checkout)
 
@@ -108,7 +108,7 @@ Used to switch to another branch or to create and switch to a new one.
 $ git branch
 ```
 
-Add a new branch to an already existing branch. You can list all branches and delete branches with this command.
+Add a new branch to an already existing branch. You can list all branches and delete branches with this command. To remove a branch type `git branch --delete <name>`
 
 [Official documentation](https://git-scm.com/docs/git-branch)
 
@@ -116,7 +116,7 @@ Add a new branch to an already existing branch. You can list all branches and de
 $ git merge
 ```
 
-You can use this to merge already existing commits from a branch into the current branch.
+You can use this to merge already existing commits from a branch into the current branch. `git checkout <branch>` to the branch you want to merge a branch into before merging.
 
 [Official documentation](https://git-scm.com/docs/git-merge)
 
@@ -174,7 +174,7 @@ work.
 [Official documentation](https://git-scm.com/docs/git-push)
 
 ```
-$ git merge
+$ git merge <branch>
 ```
 
 This command can be used remote and locally. It merges already existing commits from one branch into the current one. You can use this when you want to combine branches.
