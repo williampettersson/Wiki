@@ -1,9 +1,10 @@
-# Personal wiki
+# wiki
 
-## This is an introduction
+This is a personal introduction documenting useful information for myself and others.
 
-- It contains tools I use for coding
+The wiki contains: 
+- Tools I use for coding
 - Issues I encounter
 - FAQ about git
 
-### **Please read intro.md**
+### **Please read [intro.md](intro.md)**
