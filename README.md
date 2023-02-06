@@ -1,10 +1,8 @@
 # wiki
 
-This is a personal introduction documenting useful information for myself and others.
+This is a personal wiki documenting things I learn and useful information for myself and others.
 
 The wiki contains: 
-- Tools I use for coding
-- Issues I encounter
-- FAQ about git
-
-### **Please read [intro.md](intro.md)**
+- [requirements](requirements.md), Tools I use for coding
+- [git](git.md), which includes useful commands, faq and info about git.
+- [intro](intro.md), basic markdown formatting.
